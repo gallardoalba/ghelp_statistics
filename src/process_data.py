@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
 import pandas as pd
-import matplotlib.pyplot as plt
-from math import log
 import calendar
 
 
@@ -48,14 +46,9 @@ def main():
     posts_2019, pdb_2019 = process_posts("../raw_data/2019_posts.csv")
     posts_2020, pdb_2020 = process_posts("../raw_data/2020_posts.csv")
     posts_2021, pdb_2021 = process_posts("../raw_data/2021_posts.csv")
-
-
     dates_plot = pd.to_datetime(dates_2021)
     
-    plt.rc('font', **font)
-    ax = plt.gca()
 
-    
     # Visits dataframe
     
     DF = pd.DataFrame()
@@ -74,6 +67,7 @@ def main():
     GB['Months'] = months
     GB.to_csv("../dataframes/DF_visits_median.csv")
 
+    
     DF['Differences'] = diff
     DF.to_csv("../dataframes/DF_visits.csv")
 
