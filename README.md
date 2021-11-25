@@ -1,2 +1,3 @@
-# ghelp_statistics
-Code for analyzing the Galaxy Help Forum statistics 
+# Galaxy Help Forum statistics
+
+Code for analyzing the Galaxy Help Forum statistics. 
